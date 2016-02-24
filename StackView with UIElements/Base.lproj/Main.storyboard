@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DWL-Me-t29">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DWL-Me-t29" userLabel="Stack View 0.1">
                                 <rect key="frame" x="16" y="40" width="343" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculate Speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Icm-x6-jfV">
@@ -28,7 +28,7 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z96-py-spr">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z96-py-spr">
                                         <rect key="frame" x="218" y="0.0" width="70" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.83265102492200249" blue="0.11504177799855431" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -36,17 +36,36 @@
                                         </constraints>
                                         <state key="normal" title="Run"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xH6-IN-xa5">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xH6-IN-xa5">
                                         <rect key="frame" x="308" y="0.0" width="35" height="30"/>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Calculate Torque" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7d-Vh-xI0">
+                                <rect key="frame" x="16" y="94" width="129" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meL-vD-OWv">
+                                <rect key="frame" x="279" y="90" width="80" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.72514940800000005" blue="0.3848376684" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="9dO-Al-sLR"/>
+                                    <constraint firstAttribute="height" constant="30" id="qzG-Di-dhV"/>
+                                </constraints>
+                                <state key="normal" title="Torque It"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="meL-vD-OWv" firstAttribute="centerY" secondItem="L7d-Vh-xI0" secondAttribute="centerY" id="BMW-0Y-UvV"/>
+                            <constraint firstItem="L7d-Vh-xI0" firstAttribute="top" secondItem="Icm-x6-jfV" secondAttribute="bottom" constant="24" id="L6v-eI-L5L"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="meL-vD-OWv" secondAttribute="trailing" constant="-4" id="Tid-2z-ELJ"/>
                             <constraint firstItem="DWL-Me-t29" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Y06-28-keT"/>
                             <constraint firstItem="DWL-Me-t29" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dub-IC-7dG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="DWL-Me-t29" secondAttribute="trailing" id="gEd-u4-yKP"/>
+                            <constraint firstItem="L7d-Vh-xI0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-4" id="vMK-8P-nCb"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
