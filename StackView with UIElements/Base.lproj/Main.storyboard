@@ -18,58 +18,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DWL-Me-t29" userLabel="Stack View 0.1">
-                                <rect key="frame" x="16" y="40" width="343" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="aQN-94-Y4C" userLabel="Main Stack View">
+                                <rect key="frame" x="16" y="40" width="343" height="100"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculate Speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Icm-x6-jfV">
-                                        <rect key="frame" x="0.0" y="0.0" width="198" height="30"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z96-py-spr">
-                                        <rect key="frame" x="218" y="0.0" width="70" height="30"/>
-                                        <color key="backgroundColor" red="1" green="0.83265102492200249" blue="0.11504177799855431" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="70" id="bp8-2t-m3m"/>
-                                        </constraints>
-                                        <state key="normal" title="Run"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xH6-IN-xa5">
-                                        <rect key="frame" x="308" y="0.0" width="35" height="30"/>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uMg-xj-1Bn" userLabel="Stack View 0.2">
-                                <rect key="frame" x="16" y="94" width="347" height="30"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculate Torque" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7d-Vh-xI0">
-                                        <rect key="frame" x="0.0" y="0.0" width="267" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meL-vD-OWv">
-                                        <rect key="frame" x="267" y="0.0" width="80" height="30"/>
-                                        <color key="backgroundColor" red="1" green="0.72514940800000005" blue="0.3848376684" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="80" id="9dO-Al-sLR"/>
-                                            <constraint firstAttribute="height" constant="30" id="qzG-Di-dhV"/>
-                                        </constraints>
-                                        <state key="normal" title="Torque It"/>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DWL-Me-t29" userLabel="Stack View 0.1">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculate Speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Icm-x6-jfV">
+                                                <rect key="frame" x="0.0" y="0.0" width="198" height="30"/>
+                                                <color key="backgroundColor" red="0.064887647790000003" green="0.38512603449999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z96-py-spr">
+                                                <rect key="frame" x="218" y="0.0" width="70" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.83265102492200249" blue="0.11504177799855431" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="bp8-2t-m3m"/>
+                                                </constraints>
+                                                <state key="normal" title="Run"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xH6-IN-xa5">
+                                                <rect key="frame" x="308" y="0.0" width="35" height="30"/>
+                                                <color key="backgroundColor" red="0.99102351639999997" green="0.43543763720000001" blue="0.1020539998" alpha="1" colorSpace="calibratedRGB"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uMg-xj-1Bn" userLabel="Stack View 0.2">
+                                        <rect key="frame" x="0.0" y="70" width="343" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculate Torque" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7d-Vh-xI0">
+                                                <rect key="frame" x="0.0" y="0.0" width="263" height="30"/>
+                                                <color key="backgroundColor" red="0.044572926479999997" green="0.50475457700000004" blue="0.30569314069999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meL-vD-OWv">
+                                                <rect key="frame" x="263" y="0.0" width="80" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.72514940800000005" blue="0.3848376684" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="9dO-Al-sLR"/>
+                                                    <constraint firstAttribute="height" constant="30" id="qzG-Di-dhV"/>
+                                                </constraints>
+                                                <state key="normal" title="Torque It"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="uMg-xj-1Bn" secondAttribute="trailing" id="Vs9-CA-NwR"/>
-                            <constraint firstItem="DWL-Me-t29" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Y06-28-keT"/>
-                            <constraint firstItem="DWL-Me-t29" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dub-IC-7dG"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="DWL-Me-t29" secondAttribute="trailing" id="gEd-u4-yKP"/>
-                            <constraint firstItem="uMg-xj-1Bn" firstAttribute="top" secondItem="Icm-x6-jfV" secondAttribute="bottom" constant="24" id="s7F-Ll-bDQ"/>
-                            <constraint firstItem="uMg-xj-1Bn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-4" id="y5X-P6-IuX"/>
+                            <constraint firstItem="aQN-94-Y4C" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="7tr-ih-0lR"/>
+                            <constraint firstItem="aQN-94-Y4C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="XTl-aM-pBU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aQN-94-Y4C" secondAttribute="trailing" id="wt9-Fq-vD5"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
